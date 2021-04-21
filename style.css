@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e1d8fa;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container > .mobile-logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color:#131353;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    display: none;
+}
+
+.form-wrapper{
+    display: flex;
+    width: 650px;
+    height: 450px;
+    margin: 0 20px;
+    border-radius: 10px;
+    background-color:#fbf9ff;
+    box-shadow: 0px 5px 20px 0px #8B8CB2;
+    overflow: hidden;
+} 
+
+.form-note-wrapper{
+    background-color: #1E1E64;
+    width: 230px;
+    color: #fff;
+    padding: 20px;
+}
+
+.form-note-wrapper .logo{
+    font-size: 1.8rem;
+    margin-bottom: 65px;
+}
+
+.form-note-wrapper .main-note{
+    font-weight: 420;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #f3ecec;
+}
+
+.form-note-wrapper .sub-note{
+    font-size: 12px;
+    color: #cec9e0;
+}
+
+.form-signup-options{
+    width: 450px;
+    padding: 50px 65px 40px 40px;
+}
+
+.form-signup-options > h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #1E1E64;
+}
+
+.form-signup-options > p{
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.form-signup-options > p a{
+    color: #24A5F4;
+    text-decoration: none;
+}
+
+.signup-option{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px #a5a5a5;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.signup-option:hover{
+    box-shadow: 0px 4px 8px 1px #b9b9b9;
+}
+
+.signup-option p{
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.signup-option-icon{
+    background-color: #EAE6F6;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-option-icon i{
+    color: #24A5F4;
+}
+
+@media(max-width: 520px){
+    .form-note-wrapper{
+        display: none
+    }
+
+    .form-signup-options{
+        padding: 50px 30px;
+    }
+    
+    .container > .mobile-logo{
+        display: block;
+    }
+}
